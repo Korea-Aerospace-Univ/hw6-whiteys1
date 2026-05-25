@@ -20,7 +20,7 @@ int main(){
 	q = arr_2 + N - 1;
 	
 	for(int i = 0; i < N; i++){
-		printf("%d ", *(p + i) + *(q - i));
+		printf(" %d", *(p + i) + *(q - i));
 	}
 
 
