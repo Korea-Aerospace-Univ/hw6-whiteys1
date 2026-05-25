@@ -9,11 +9,11 @@ int main(){
 	int max_count = 0;
 
 	for(char *p = arr; p < arr + 10; p++){
-		char cur_count = 0;
+		char cur_count = 0;                   //--> int형이여야 합니다!
 		for(char *q = arr; q < arr + 10; q++){
 			if (*p == *q) cur_count++;
-			if (cur_count > max_count){
-				max_char = *p;
+			if (cur_count > max_count){      // 이 if문은 내부 for문 다 돌린 후에 한 번만 체크하면 됩니다. 지금은 매번 체크하고 있지요.
+				max_char = *p;               
 				max_count = cur_count;
 			}
 		}
@@ -22,3 +22,4 @@ int main(){
 	printf("%c %d", max_char,max_count );
 	return 0;
 }
+
