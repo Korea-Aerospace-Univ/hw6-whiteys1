@@ -4,8 +4,8 @@ int main(){
 	int N;
 
 	scanf("%d", &N);
-	int arr_1[20] = {}
-  int arr_2[20] ={};
+	int arr_1[20] = {};
+	int arr_2[20] ={};
 
 	for(int *p = arr_1; p < arr_1 + N; p++){
 		scanf("%d", p);
