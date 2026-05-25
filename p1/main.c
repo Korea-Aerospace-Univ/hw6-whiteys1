@@ -5,7 +5,7 @@ int main(){
 
 	for(char *p = arr; p < arr + 10; p++) scanf("%c", p);
 
-	char max_char = arr[0];
+	char max_char = arr[0];  // 이렇게 할 필요가 없는 문제입니다. 얘는 '\0'으로 초기화하면 됩니다. 따라서 변수 선언은 위쪽으로 몰라서 선언해 주세요.
 	int max_count = 0;
 
 	for(char *p = arr; p < arr + 10; p++){
